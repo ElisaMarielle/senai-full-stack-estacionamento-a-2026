@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento ACME — Cadastrar Automóveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cad.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1>Estacionamento ACME</h1>
+            <a href="./index.html">Lista</a>
+        </div>
+        <div class="right">
+            <a href="cadaut.htm">Cadastrar automóveis</a>
+            <a href="cadest.htm">Cadastrar estadia</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="modal" id="modal">
+            <form action="" id="form-aut">
+                <h2>Cadastrar novo automóvel</h2>
+                <!----------------->
+                <label for="proprietario">Nome do proprietário</label>
+                <input type="text" id="proprietario" required>
+                <!----------------->
+                <label for="placa2">Placa do veículo</label>
+                <input type="text" id="placa2" required>
+                <!----------------->
+                <label for="tipo">Tipo de veículo</label>
+                <input type="text" id="tipo">
+                <!----------------->
+                <label for="modelo">Modelo do veículo</label>
+                <input type="text" id="modelo">
+                <!----------------->
+                <label for="marca">Marca do veículo</label>
+                <input type="text" id="marca">
+                <!----------------->
+                <label for="cor">Cor do veículo</label>
+                <input type="text" id="cor">
+                <!----------------->
+                <label for="ano">Ano do veículo</label>
+                <input type="number" id="ano">
+                <!----------------->
+                <label for="telefone">Telefone para contato</label>
+                <input type="text" id="telefone" required>
+                <!----------------->
+                <div class="form-btns">
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../cadastros.js"></script>
+</body>
+</html>

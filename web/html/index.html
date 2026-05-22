@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento ACME</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1>Estacionamento ACME</h1>
+            <a href="./index.html">Lista</a>
+        </div>
+        <div class="right">
+            <a href="cadaut.htm">Cadastrar automóveis</a>
+            <a href="cadest.htm">Cadastrar estadia</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="listagem">
+            <h2>Automóveis</h2>
+            <div class="lista-aut"></div>
+
+            <h2>Estadias</h2>
+            <div class="lista-est"></div>
+        </div>
+
+        <div id="detalhes" class="detalhes-est detalhes">
+            <div class="janela">
+                <div class="est-info">
+                    <h2 id="nomeProprietario"></h2>
+                    <!----------------->
+                    <p>Placa</p>
+                    <input type="text" id="placaEdit" disabled>
+                    <!----------------->
+                    <p>Valor por hora</p>
+                    <input type="number" id="valorHoraEdit">
+                    <!----------------->
+                </div>
+                <!----------------->
+                <div class="janela-btns">
+                    <button onclick="salvarEdicaoEstadia()">Salvar</button>
+                    <button onclick="excluirEstadiaAtual()">Excluir</button>
+                    <button onclick="fecharEstadia()">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detalhes" class="detalhes-aut detalhes">
+            <div class="janela">
+                <div class="aut-info">
+                    <h2 id="placa"></h2>
+                    <!----------------->
+                    <p>Placa</p>
+                    <input type="text" id="placaEdit2" disabled>
+                    <!----------------->
+                    <p>Tipo</p>
+                    <input type="text" id="tipoEdit">
+                    <!----------------->
+                    <p>Modelo</p>
+                    <input type="text" id="modeloEdit">
+                    <!----------------->
+                    <p>Marca</p>
+                    <input type="text" id="marcaEdit">
+                    <!----------------->
+                    <p>Cor</p>
+                    <input type="text" id="corEdit">
+                    <!----------------->
+                    <p>Ano</p>
+                    <input type="number" id="anoEdit">
+                    <!----------------->
+                    <p>Telefone para contato</p>
+                    <input type="text" id="telefoneEdit">
+                    <!----------------->
+                </div>
+                <!----------------->
+                <div class="janela-btns">
+                    <button onclick="salvarEdicaoAutomovel()">Salvar</button>
+                    <button onclick="excluirAutomovelAtual()">Excluir</button>
+                    <button onclick="fecharAutomovel()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

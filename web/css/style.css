@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #fffea9;
+    --secondary: #141414;
+
+    --dm-sans: dm sans;
+}
+
+body{
+    font-family: var(--dm-sans);
+}
+
+
+header{
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left a, .right a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    background: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background 0.2s ease-in;
+}
+.left a:hover, .right a:hover{
+    background: #e6e586;
+    border-radius: 20px;
+}
+
+main{
+    margin: 7rem 2rem 0;
+}
+.detalhes{
+    background: #1414146b;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.detalhes-est {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.detalhes-aut{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.detalhes .janela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+.janela input{
+    padding: 4px 12px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #e6e586;
+}
+.janela-btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.janela-btns button{
+    padding: 6px 12px;
+    background: #e6e586;
+    border: none; outline: none; border-radius: 20px;
+    font-family: var(--dm-sans);
+    font-weight: 500;
+}
+
+
+.listagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listagem h2{
+    margin-bottom: 10px;
+}
+.lista-est, .lista-aut{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+}
+.card{
+    background: var(--primary);
+    padding: 2rem 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #e6e586;
+}
+.card h2{
+    font-size: 20px;
+}
